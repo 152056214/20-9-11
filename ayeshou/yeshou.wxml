@@ -1,0 +1,28 @@
+
+<view class="all" style="height:{{winheight}}px;width:{{winwidth}}px;">
+  <map  markers="{{markers}}" 
+      data-markers="{{markers}}" 
+      bindmarkertap='tiaozhuan'
+      style="width:{{winwidth}}px;height:{{winheight}}px;"
+      longitude="{{poi.longitude}}"
+      latitude="{{poi.latitude}}" scale='12' show-location>
+
+     <!-- 上部搜索框 -->
+    <view>
+      <cover-image class="userinfo-avatar" style="height:{{heii}}px" src="{{imagepath}}"  mode="cover" bindtap="touxiang"></cover-image>
+      <form><view class="sousuo">
+        <cover-image class="xiaoyuan" src="../resourse/yeshou/小圆.jpg" bindtap="find">{{poiname}}</cover-image>
+        <input placeholder="查找地点" id="shuru" bindconfirm="send" bindinput='formName'></input>
+      </view> </form>
+    </view>
+    <!-- 下部按钮框 -->
+    <view class="bottom">
+      <cover-image class="scan icon" src="../resourse/yeshou/扫一扫.png" bindtap="saoyisao"></cover-image>
+      <cover-view class="icontext text1">扫游戏</cover-view>
+        <cover-image class="user icon" src="../resourse/yeshou/new-1.png" ></cover-image>
+        <cover-view class="user icon text3" bindtap="touser">活</cover-view>
+      <cover-view class="icontext text2">建游戏</cover-view>
+    </view>
+    <cover-image class="weizhi" src="../resourse/yeshou/定位icon.png" bindtap="dingwei"></cover-image>
+  </map>
+</view> 

@@ -1,0 +1,84 @@
+/* pages/login/login.wxss */
+/* 背景1 */
+.bg-1{
+  background-color: #2DC1EF;
+  position: absolute;
+  width: 100%;
+}
+/* 背景2 */
+.bg-2{
+  width: 86%;
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  background-color: white;
+  box-shadow: 0rpx 0rpx 20rpx 10rpx rgba(17, 1, 1, 0.1);
+  border-radius: 20px;
+}
+/* 头部文字背景 */
+.top-2{
+  height: 7%;
+  width: 50%;
+  position: absolute;
+  margin-left: 50%;
+}
+.top-3{
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 3%;
+  font-weight: bold;
+}
+.top-left{
+  margin-left: 0;
+}
+.gsload{
+  margin-left: 0;
+}
+
+/* 输入框 */
+.biaodan{
+  margin-top: 60px;
+}
+.aclist{
+  margin-top: 60px;
+  height: 200px;
+  width: 78%;
+  background-color: teal;
+  margin-left: 11%;}
+.section{
+  display: flex;
+  border-bottom: 1rpx solid #999999;
+  flex-direction: row;
+  font-weight: bold;
+  padding-top: 60rpx;
+  padding-bottom: 20rpx ;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+/* 正则提示 */
+.tishi{
+  color: red;
+  position: absolute;
+  right: 20px;
+  font-weight: normal;
+  font-size: 12px;
+}
+/* 按钮 */
+.btn1{
+  width: 78%;
+  margin-left: 11%;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 120px;
+  background-color: #DDDDDD;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  border-radius: 15px;
+}
+.btn2{
+  margin-top: 20px;
+}

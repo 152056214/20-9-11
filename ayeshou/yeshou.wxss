@@ -1,0 +1,93 @@
+.all{
+  position: relative;
+}
+
+map{
+  width: 100%;
+  width: 375px;
+  height: 568px;
+  position: relative;
+}
+/* 下部图标框 */
+.bottom{
+  width: 50%;
+  height: 70px;
+  background-color: white;
+  border-radius: 35px;
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+}
+/* 下部图标一 */
+.icon{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+}
+.scan{
+  left: 18%;
+}
+/* 下部图标二 */
+.user{
+  right: 18%;
+}
+/* 下部图标文字 */
+.icontext{
+  font-size: 60%;
+  position: absolute;
+  bottom: 5px;
+}
+.text1{
+  left: 22%;
+}
+.text2{
+  right: 22%;
+}
+.text3{
+  color: white;
+  font-family: PingFangSC-Medium;
+  font-weight: bold ;
+  border-radius: 50%;
+  font-size: 19px;
+  text-align: center;
+  line-height: 50px;
+}
+/* 下部位置按钮 */
+.weizhi{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 5%;
+  right: 7%;
+}
+/* 头部搜索框 */
+.xiaoyuan{
+  margin-left: 16px;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+/* 头部搜索框 */
+.sousuo{
+  position: absolute;
+  font-size: small;
+  padding-top: 8px;
+  background-color: white;
+  top: 15px;
+  left: 15%;
+  width: 70%;
+  height: 30px;
+  box-shadow: 0rpx 10rpx 10rpx 0rpx rgba(17, 1, 1, 0.1);
+  border-radius: 8px;
+}
+/* 头部头像 */
+.userinfo-avatar {
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}

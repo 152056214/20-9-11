@@ -1,0 +1,9 @@
+<!--pages/shenhea/shenhea.wxml-->
+
+<view class="bg-1" style="height:{{bghei}}px">
+  <cover-image class="zuoshang" src="../resourse/shenhe/shouye.png"></cover-image>
+  <cover-image class="state" style="height:{{stahei}}px" src="../resourse/shenhe/审核中.png"></cover-image>
+</view>
+<view class="text1">提交成功，等待管理员审核！</view>
+<view class="text2">预计一个工作日内审核完毕，审核结果会短信通知到您注册的手机上</view>
+

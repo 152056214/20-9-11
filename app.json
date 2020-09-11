@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/ayeshou/yeshou",
+    "pages/dactivity/dactivity",
+    "pages/cnewar/newar",
+    "pages/cdianwei/dianwei",
+    "pages/cdianweidetail/dianweidetail",
+    "pages/cshare/share",
+    "pages/bperzhuce/perzhuce",
+    "pages/blogin/login",
+    "pages/ccreatac/creatac",
+    "pages/bshenhea/shenhea",
+    "pages/shenhe/shenhe",
+    "pages/index/index",
+    "pages/rili/rili",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black",
+    "navigationBarBackgroundColor": "#2DC1EF"
+  },
+  "permission":{
+    "scope.userLocation":{
+      "desc":"位置信息用于户外定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

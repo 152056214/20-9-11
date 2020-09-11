@@ -1,0 +1,58 @@
+<!--pages/creatac/creatac.wxml-->
+<view class="bg-1" style="height:{{bghei}}px"></view>
+<view class="bg-2" style="height:auto">
+  <view class="top">
+    <cover-image class="top-1" src="../resourse/zhuce/gongsi.png"></cover-image>
+    <cover-view class="top-2">玩家注册</cover-view>
+  </view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      玩家姓名:<view></view><input name="wjName"/>
+    </view>
+    <view class="section">
+      玩家性别:
+      <!-- <view></view><input name="gsAddr"/> -->
+      <radio-group name="sex">
+        <radio value="1" class="radio"/>男
+        <radio value="2" class="radio"/>女
+      </radio-group>
+    </view>
+    <view class="section">
+      玩家住址:<view></view><input name="wjaddr"/>
+    </view>
+    <view class="section">
+      联系人电话:<view class="tishi">{{tip1}}</view><input bindinput="phone" name="userPhone" />
+    </view>
+    <view class="section">
+      联系邮箱:<view class="tishi">{{tip2}}</view><input bindinput="email" name="email"/>
+    </view>
+    <view class="section last">
+      历史活动截图:
+    </view>
+    <view class="upload">
+      <cover-view class="text">示例</cover-view>
+      <cover-image class="tupian pic1" bindtap="preview" style="height:{{tphei}}px" src="../resourse/zhuce/示例.jpg"></cover-image>
+      <cover-view class="text">{{text4}}</cover-view>
+      <cover-image class="tupian" bindtap="tupian" style="height:{{tphei}}px" src="{{chuantu}}"></cover-image>
+    </view>
+    <view class="section last">
+      上传身份证照片:
+    </view>
+    <view class="upload">
+      <cover-view class="text2">示例</cover-view>
+      <cover-image class="tupian pic1" bindtap="preview" style="width:{{tphei}}px;height:{{tpwid}}px" src="../resourse/zhuce/示例-横.jpg"></cover-image>
+      <cover-view class="text2">{{text5}}</cover-view>
+      <cover-image class="tupian" bindtap="sfz1" style="width:{{tphei}}px;height:{{tpwid}}px" src="{{suolve1}}"></cover-image>
+    </view>
+    <view class="upload third">
+      <cover-view class="text2">示例</cover-view>
+      <cover-image class="tupian pic1" bindtap="preview" style="width:{{tphei}}px;height:{{tpwid}}px" src="../resourse/zhuce/示例-横.jpg"></cover-image>
+      <cover-view class="text2">{{text6}}</cover-view>
+      <cover-image class="tupian" bindtap="sfz2" style="width:{{tphei}}px;height:{{tpwid}}px" src="{{suolve2}}"></cover-image>
+    </view>
+    <!-- <input hidden="true" bindinput="hidden" name="picname">{{baseaa}}</input> -->
+    <view >
+      <button class="zhuce" style="background-color:{{zcco}}" formType="submit">注册</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,56 @@
+<!--pages/dianwei/dianwei.wxml-->
+<view class="all" style="height:{{winheight}}px;width:{{winwidth}}px;">
+  
+  <map  markers="{{markers}}"
+      data-markers="{{markers}}" 
+      bindmarkertap='clickmap'
+      style="width:{{winwidth}}px;height:{{winheight}}px;"
+      longitude="{{poi.longitude}}"
+      latitude="{{poi.latitude}}" scale='14.6' show-location>
+
+      <cover-view class="top1">
+        <cover-image class="pross" src="{{jindutiao}}"></cover-image>
+        <cover-view class="pro txt1">基础信息</cover-view>
+        <cover-view class="pro txt2">点位设置</cover-view>
+        <cover-view class="pro txt3">活动生成</cover-view>
+      </cover-view>
+      <!-- <cover-image src="../resourse/dianwei/A.png" style="width:{{winwidth}}px;height:{{winheight}}px;opacity: 0;"> -->
+        
+      <!-- </cover-image> -->
+      <cover-view class="bottom" style="height:{{botthei}}px">
+        <cover-image class="icondingwei" src="../resourse/dianwei/dingwei.png"></cover-image>
+        <cover-view class="icontxt">已记录点位</cover-view>
+        <cover-view class="icontxt2">点位状态</cover-view>
+        
+        <cover-view class="liststy" wx:for="{{liebiao}}" wx:if="{{liebiao}}" wx:key="item">
+        <!-- 第一项，背景加序号 -->
+          <cover-view   wx:if="{{item.activityType-1}}" class="left1">
+            <cover-image  src="../resourse/dianwei/xuhaobg.png" />
+            <cover-view class="xuhao">0{{index+1}}</cover-view> 
+           </cover-view>
+        <!-- 第一项，背景加序号 -->
+          <cover-view   wx:if="{{item.activityType-1==false}}" class="left1">
+            <cover-image  src="../resourse/dianwei/xuhaobg.png" />
+            <cover-view class="xuhao">0{{index+1}}</cover-view> 
+          </cover-view>
+           <!-- 第二项，点位名称 -->
+          <cover-view  wx:if="{{item.activityType-1}}" class="lione"> 
+            <cover-image  src="../resourse/dianwei/namebg.png" />
+            <cover-view class="xuhao">{{item.pointName}}</cover-view> 
+          </cover-view>
+          <!-- 第二项，点位名称 -->
+          <cover-view  wx:if="{{item.activityType-1==false}}" class="lione"> 
+            <cover-image  src="../resourse/dianwei/namebg.png" />
+            <cover-view class="xuhao">{{item.pointName}}</cover-view> 
+          </cover-view>
+          <!-- 第三项，点位类型 -->
+          <cover-view class="litwo" wx:if="{{item.activityType-1}}">线索</cover-view>
+          <cover-view class="litwo" wx:if="{{item.activityType-1==false}}">关卡</cover-view>
+          <!-- 第四项，删除按钮 -->
+          <button class="lifour" wx:if="{{item.activityType-1}}"  data-id="{{index}}" data-key="{{item}}" bindtap="deletpoint">删除</button>
+          <button class="lifour" wx:if="{{item.activityType-1==false}}" bindtap="deletpoint">删除</button>
+        </cover-view>
+        <cover-image bindtap="tijiao" class="anniu" src="../resourse/dianwei/nextred.png" hidden="{{kedian}}"></cover-image>
+      </cover-view>
+  </map>
+</view> 

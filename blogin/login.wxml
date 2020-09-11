@@ -1,0 +1,30 @@
+<!--pages/login/login.wxml-->
+
+<view class="bg-1" style="height:{{bghei}}px"></view>
+<view class="bg-2" style="height:{{bg2hei}}px">
+  <cover-view class="top-2">
+    <cover-image wx:if="{{!loadopt}}" src="../resourse/login/玩家登录.png"></cover-image>
+  </cover-view>
+  <cover-view class="top-2 gsload">
+    <cover-image wx:if="{{loadopt}}" src="../resourse/login/公司登录.png"></cover-image>
+  </cover-view>
+  <cover-view class="top-3 top-left" bindtap="gsload">公司登录</cover-view>
+  <cover-view class="top-3" bindtap="wjload">玩家登录</cover-view>
+
+  <view class="biaodan" >
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="section">
+        <input name="gsName" wx:if="{{loadopt}}" placeholder="请输入公司名称"/>
+        <input name="wjName" wx:if="{{!loadopt}}" placeholder="请输入玩家姓名"/>
+      </view>
+      <view class="section">
+        <input name="gspho" wx:if="{{loadopt}}" bindinput="phone" placeholder="请输入联系人电话"/>
+        <input name="wjpho" wx:if="{{!loadopt}}" bindinput="phone" placeholder="请输入玩家电话"/>
+        <view class="tishi">{{tip1}}</view>
+      </view>
+      <button class="btn1" bindtap="login" form-type="submit">登录</button>
+    </form>
+      <button class="btn1 btn2" bindtap="zhuce">注册</button>
+
+  </view>
+</view>

@@ -1,0 +1,133 @@
+/* pages/dianwei/dianwei.wxss */
+/* pages/lbsc/lbsc.wxss */
+.all{
+  position: relative;
+}
+button{
+  padding: 0%;
+  margin: 0;
+}
+
+map{
+  width: 375px;
+  height: 568px;
+  position: relative;
+}
+.bg{
+  width:100%;
+  height:700px;
+  opacity: 0;
+}
+/* 上部进度条 */
+.pross{
+  height: 20px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+/* 进度条背景 */
+.top1{
+  background-color: white;
+  width: 94%;
+  height: 70px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 3%;
+  border-radius: 15px;
+}
+/* 进度条文字 */
+.pro{
+  width: 32%;
+  float: left;
+  margin-top: 5px;
+}
+.txt1{padding-left: 5px;}
+.txt2{text-align: center;}
+.txt3{float: right; text-align: right;padding-right: 5px;}
+
+/* 底部背景 */
+.bottom{
+  width: 100%;
+  height: 120px;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+}
+.icondingwei{
+  width: 11.5px;
+  height: 14.5px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+/* 底部文本 */
+.icontxt{
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  float: left;
+}
+.icontxt2{
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  float: right;
+  width: 50%;
+}
+
+.anniu{
+  width: 26%;
+  height: auto;
+  position: absolute;
+  bottom: 0%;
+  margin-left: 37%;
+
+}
+/* 底部列表 */
+.liststy{
+  width: 94%;
+  height: 20px;
+  margin-left: 2px;
+  position: relative;
+  margin-top: 1px;
+}
+.listitem{
+  width: 90%;
+  height: 15px;
+  margin-top: 5px;
+}
+.left1{
+  width: 12%;
+  float: left;
+  text-align: center;
+}
+.lione{
+  margin-right: 5px;
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+.litwo{
+  margin-right: 5px;
+  width: 30%;
+  text-align: center;
+  float: left;
+}
+.lithr{
+  float: right;
+  width: 30%;
+}
+.xuhao{
+  position: relative;
+  margin-top: -20px;
+}
+.lifour{
+  width: 50px;
+  float: left;
+  font-size: 11px;
+  color: white;
+  /* line-height: 100%; */
+  background-color: #FF4546;
+}
